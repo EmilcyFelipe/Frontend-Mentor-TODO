@@ -13,9 +13,10 @@ export default function TodoWrapper(){
             id : id,
             message : message.value,
         }])
-        setId(id+1)
+        setId(id+1);
+        message.value='';
     }
-    
+
     return(
         <div className="todo-wrapper">
             <div className="todo-banner">

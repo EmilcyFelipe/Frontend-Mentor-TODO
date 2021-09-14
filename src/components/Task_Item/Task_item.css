@@ -1,0 +1,16 @@
+.task-wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(49, 47, 47);
+}
+
+.task-select{
+    width: 20px;
+    height: 20px;
+    border: solid 2px rgb(92, 92, 92);
+    border-radius: 50%;
+}
+.task-message{
+
+}

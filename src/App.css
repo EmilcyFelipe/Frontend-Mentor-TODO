@@ -1,4 +1,20 @@
+@import url('https://fonts.google.com/specimen/Josefin+Sans');
+
 *{
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Josefin Sans',sans-serif;
+}
+
+:root{
+  --primary-color: hsl(220, 98%, 61%);
+  --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  --primary-background:hsl(235, 21%, 11%);
+  --screen-background: hsl(235, 24%, 19%);
+  --primary-font:hsl(234, 39%, 85%);
+  --primary-font-hover: hsl(236, 33%, 92%);
+  --icons-color : hsl(234, 11%, 52%);
+  --icons-weigth-color:hsl(233, 14%, 35%);
+  --icons-weigther-color:hsl(237, 14%, 26%);
+  font-size: 18px;
 }

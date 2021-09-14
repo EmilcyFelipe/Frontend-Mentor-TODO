@@ -1,17 +1,18 @@
 import TodoWrapper from "../../components/Todo_Wrapper/Todo_Wrapper";
 import './Home.css'
+import Img from '../../images/bg-desktop-dark.jpg'
 
 export default function Home(){
     return(
         <>
         <div className="todo-home">
-            <header>
-
-            </header>
+            <div className="banner-wrapper">
+                <img className="banner-img" src={Img} alt="bg" />
+            </div>
             <TodoWrapper/>
-            <main>
-
-            </main>
+            <div className="bg-default">
+            
+            </div>
         </div>
         </>
     )
