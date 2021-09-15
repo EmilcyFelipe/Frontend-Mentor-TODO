@@ -25,8 +25,8 @@ export default function TodoWrapper(){
             </div>
             <div className="input-wrapper">
             <form onSubmit={insertElement}>
-                <input type="submit"/>
-                <input type="text" name="message"/>
+                <input className="task-input-icon" type="submit" value=''/>
+                <input className="task-input" type="text" name="message"/>
             </form>
             </div>
             <ListComponent list={taskList}/>

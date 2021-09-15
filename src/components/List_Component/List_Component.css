@@ -2,8 +2,22 @@
     background-color: blueviolet;
     width: 100%;
     border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
 }
 
 .row-list{
     width: 100%;
+}
+
+.management-wrapper, .management-wrapper *{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.management-wrapper{
+    height: 30px;
 }
