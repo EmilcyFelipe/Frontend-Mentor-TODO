@@ -12,8 +12,19 @@
     height: 20px;
     border: solid 2px var(--icons-weigth-color);
     border-radius: 50%;
+    display: flex;
+    cursor: pointer;
 }
+.checked{
+    background: linear-gradient(to right,hsl(192, 100%, 67%),hsl(280, 87%, 65%));
+}
+
 .task-message{
     margin-left: 10px;
     color: var(--icons-color);
+}
+
+.completed{
+    text-decoration: line-through;
+    color: var(--icons-weigth-color);
 }

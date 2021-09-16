@@ -10,7 +10,7 @@
 
 :root{
   --primary-color: hsl(220, 98%, 61%);
-  --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  --check-background: linear-gradient(to right,hsl(192, 100%, 67%),hsl(280, 87%, 65%));
   --primary-background:hsl(235, 21%, 11%);
   --screen-background: hsl(235, 24%, 19%);
   --primary-font:hsl(234, 39%, 85%);
