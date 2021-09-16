@@ -1,23 +1,36 @@
-.list-wrapper{
-    background-color: blueviolet;
+.list-wrapper {
+    background-color: var(--icons-weigth-color);
     width: 100%;
-    border-radius: 5px;
+    border-radius: 3px;
     overflow: hidden;
     margin-top: 20px;
+}
+.list-wrapper table{
+    width: 100%;
+
 }
 
 .row-list{
     width: 100%;
 }
 
+
 .management-wrapper, .management-wrapper *{
     display: flex;
     flex-direction: row;
-    font-size: 12px;
     justify-content: space-between;
     align-items: center;
 }
 
 .management-wrapper{
     height: 30px;
+    background-color: var(--screen-background);
+    font-size: 10px;
+    color: var(--icons-weigther-color);
+    padding: 15px;
+}
+
+.filters-wrapper{
+    width: 35%;
+    justify-content: space-between;
 }
