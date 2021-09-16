@@ -38,7 +38,7 @@ export default function ListComponent({list,func}) {
             listTask.map((li) => (
               <tr key={li.id} className="row-list">
                   <td>
-                        <TaskItem id={li.id} message={li.message} />
+                        <TaskItem id={li.id} message={li.message} list={listTask} setList={setListTask} />
                   </td>
               </tr>
             ))}
