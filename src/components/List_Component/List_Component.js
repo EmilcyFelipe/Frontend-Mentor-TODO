@@ -15,7 +15,7 @@ export default function ListComponent({list,func}) {
           setListTask(list)
       }else if(e.target.innerText==='Active'){
           setListTask(
-              list.filter((lt) => lt.active ===true)
+              list.filter((lt) => lt.complete ===false)
           )
       }else if(e.target.innerText==='Complete'){
         setListTask(

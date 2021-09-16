@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ListComponent from '../List_Component/List_Component'
 import './Todo_Wrapper.css'
 import toogleTheme from '../../utils/toogle_theme'
@@ -11,13 +11,22 @@ export default function TodoWrapper(){
     const [id,setId] = React.useState(1);
     const [targetTheme,setTargetTheme] = React.useState(true)
 
+   
+
+    useEffect(()=>{
+        if(taskList.length===0){
+            setId(1)
+        }
+        localStorage.setItem('list',{taskList})
+        console.log(localStorage.getItem('list'))
+    },[taskList]);
+
     function insertElement(e){
         e.preventDefault();
         const {message} = e.target.elements;
         setTaskList([...taskList,{
             id : id,
             message : message.value,
-            active : true,
             complete : false
         }])
         setId(id+1);
