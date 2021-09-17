@@ -1,6 +1,7 @@
 import './Task_Item.css'
 import Check from '../../images/icon-check.svg'
 import Cross from '../../images/icon-cross.svg'
+
 export default function TaskItem({id,message,list,setList,gList,gSetList}){
    
     function handleStatus(e){
@@ -12,7 +13,7 @@ export default function TaskItem({id,message,list,setList,gList,gSetList}){
         identifier = e.currentTarget.id.split('-')[0];
 
         //Search in array the element.id which matches with identifier
-        for(var i=0; i<li.length;i++){
+        for(let i=0; i<li.length;i++){
             if(li[i].id === parseInt(identifier)){
                 arrayIndex = i;
             }
