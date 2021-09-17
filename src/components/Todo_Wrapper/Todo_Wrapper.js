@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import ListComponent from '../List_Component/List_Component'
 import './Todo_Wrapper.css'
 import toogleTheme from '../../utils/toogle_theme'
-import Moon from '../../images/icon-moon.svg'
+import Sun from '../../images/icon-sun.svg'
 
 
 
@@ -11,15 +11,33 @@ export default function TodoWrapper(){
     const [id,setId] = React.useState(1);
     const [targetTheme,setTargetTheme] = React.useState(true)
 
-   
+    useEffect(()=>{
+        if(localStorage.getItem('theme')){
+            setTargetTheme(()=>{
+                toogleTheme(Boolean(localStorage.getItem('theme')))
+                return(
+                    Boolean(localStorage.getItem('theme'))
+                )
+            })
+        }
+       
+    },[])
+
+   useEffect(()=>{
+       if(JSON.parse(localStorage.getItem('list'))){
+           setTaskList(JSON.parse(localStorage.getItem('list')))
+       }
+   },[])
 
     useEffect(()=>{
-        if(taskList.length===0){
-            setId(1)
-        }
-        localStorage.setItem('list',{taskList})
-        console.log(localStorage.getItem('list'))
+        localStorage.setItem('list',JSON.stringify(taskList))
     },[taskList]);
+
+    function handleTheme(){
+        localStorage.setItem('theme',targetTheme);
+        toogleTheme(targetTheme);
+        setTargetTheme(!targetTheme);
+    }
 
     function insertElement(e){
         e.preventDefault();
@@ -37,7 +55,7 @@ export default function TodoWrapper(){
         <div className="todo-wrapper">
             <div className="todo-banner">
                 <h1>T O D O</h1>
-                <img className="icon-theme" alt='icon theme' src={Moon} onClick={(e)=>{toogleTheme(e,targetTheme); setTargetTheme(!targetTheme)}}/>
+                <img className="icon-theme" alt='icon theme' src={Sun} onClick={handleTheme}/>
             </div>
             <div className="input-wrapper">
             <form onSubmit={insertElement}>

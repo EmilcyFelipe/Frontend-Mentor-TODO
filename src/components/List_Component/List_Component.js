@@ -10,12 +10,14 @@ export default function ListComponent({list,func}) {
     setListTask(Array.from(list));
   }, [list]);
 
+  
+
   function filterAction(e){
       if(e.target.innerText==='All'){
           setListTask(list)
       }else if(e.target.innerText==='Active'){
           setListTask(
-              list.filter((lt) => lt.complete ===false)
+              list.filter((lt) => lt.complete===false)
           )
       }else if(e.target.innerText==='Complete'){
         setListTask(
@@ -23,6 +25,7 @@ export default function ListComponent({list,func}) {
         )
       }
   }
+
 
   function clearComplete(){
     func(
@@ -38,7 +41,7 @@ export default function ListComponent({list,func}) {
             listTask.map((li) => (
               <tr key={li.id} className="row-list">
                   <td>
-                        <TaskItem id={li.id} message={li.message} list={listTask} setList={setListTask} />
+                        <TaskItem id={li.id} message={li.message} list={listTask} setList={setListTask} gList={list} gSetList={func}/>
                   </td>
               </tr>
             ))}

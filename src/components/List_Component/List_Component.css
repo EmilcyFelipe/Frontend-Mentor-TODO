@@ -1,5 +1,5 @@
 .list-wrapper {
-    background-color: var(--icons-weigth-color);
+    background-color: var(--icons-color);
     width: 100%;
     border-radius: 3px;
     overflow: hidden;
@@ -26,7 +26,7 @@
     height: 30px;
     background-color: var(--screen-background);
     font-size: 10px;
-    color: var(--icons-weigther-color);
+    color: var(--icons-weigth-color);
     padding: 15px;
 }
 
