@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import TaskItem from "../Task_Item/task_item";
+import TaskItem from "../Task_Item/Task_Item";
 
 import "./List_Component.css";
 

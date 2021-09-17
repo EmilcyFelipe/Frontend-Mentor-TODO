@@ -37,17 +37,28 @@ export default function TaskItem({id,message,list,setList,gList,gSetList}){
 
     //Preserve the changes when the list rebuild from filters
     let idPreserve =null;
-    for(var i=0;i<list.length;i++){
+    for(let i=0;i<list.length;i++){
         if(id===list[i].id){
             idPreserve=i;
         }
     }
 
+    //remove item of global list when cross were clicked
     function removeItem(e){
         var wdlist = Array.from(gList);
-            wdlist.splice(e.currentTarget.id.split('-')[0]-1,1)
+        let identifier =null;
+        let idElement = e.currentTarget.id.split('-')[0];
+        console.log(idElement)
+        for(var i=0;i<list.length;i++){
+            if(list[i].id===parseInt(idElement)){
+                identifier = i;
+                console.log(identifier)
+            }
+        }
+            console.log(identifier)
+            wdlist.splice(identifier,1)
             gSetList(wdlist)
-      }
+    }
 
   
     return(
