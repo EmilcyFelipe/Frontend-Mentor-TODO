@@ -1,4 +1,4 @@
-import './Task_Item.css'
+import './Task_item.css'
 import Check from '../../images/icon-check.svg'
 import Cross from '../../images/icon-cross.svg'
 
