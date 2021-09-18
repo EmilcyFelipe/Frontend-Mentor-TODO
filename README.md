@@ -15,7 +15,7 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 - [Author](#author)
 
 ## Overview
-    So, this is an amazing project that help me a lot to improve my skills of ReactJS. It is about a ToDo list that the user can see the tasks that remains to do, besides can filter the elements and remove the ones that already completed, and changed theme. All the data is saved and when the page has updated, you don't lose the ones. 
+So, this is an amazing project that help me a lot to improve my skills of ReactJS. It is about a ToDo list that the user can see the tasks that remains to do, besides can filter the elements and remove the ones that already completed, and changed theme. All the data is saved and when the page has updated, you don't lose the ones. 
 
 ### The challenge
 
@@ -32,7 +32,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![dark](https://github.com/EmilcyFelipe/Frontend-Mentor-TODO/blob/master/dark.png)
+![light](https://github.com/EmilcyFelipe/Frontend-Mentor-TODO/blob/master/dark.png)
 
 ### Links
 
