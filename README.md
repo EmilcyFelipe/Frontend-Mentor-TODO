@@ -33,7 +33,7 @@ Users should be able to:
 ### Screenshot
 
 ![dark](https://github.com/EmilcyFelipe/Frontend-Mentor-TODO/blob/master/dark.png)
-![light](https://github.com/EmilcyFelipe/Frontend-Mentor-TODO/blob/master/dark.png)
+![light](https://github.com/EmilcyFelipe/Frontend-Mentor-TODO/blob/master/light.png)
 
 ### Links
 
