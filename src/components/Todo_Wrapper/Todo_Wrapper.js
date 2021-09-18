@@ -64,7 +64,7 @@ export default function TodoWrapper(){
             </form>
             </div>
             <ListComponent list={taskList} func={setTaskList}/>
-
+            <div className="signature">Made by Felipe de Paula</div>
         </div>
     )
 }
