@@ -4,14 +4,16 @@ import TaskItem from "../Task_Item/Task_item";
 import "./List_Component.css";
 
 export default function ListComponent({list,func}) {
+  
+  //create a new instance of the global list
   const [listTask, setListTask] = useState(Array.from(list));
 
+  //Update the local list when global one is modified
   useEffect(() => {
     setListTask(Array.from(list));
   }, [list]);
 
-  
-
+  //function to filter the local list 
   function filterAction(e){
       if(e.target.innerText==='All'){
           setListTask(list)
@@ -26,7 +28,7 @@ export default function ListComponent({list,func}) {
       }
   }
 
-
+  //Function to clear the items finished of the global list
   function clearComplete(){
     func(
         list.filter((lt) => lt.complete===false)
