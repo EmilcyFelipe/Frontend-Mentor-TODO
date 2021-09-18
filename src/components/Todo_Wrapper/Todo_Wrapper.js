@@ -11,7 +11,7 @@ export default function TodoWrapper() {
   //Element that will used on building elements of list process
   const [id, setId] = React.useState(1);
   //Set the value of which theme will vailable
-  const [targetTheme, setTargetTheme] = React.useState(false);
+  const [targetTheme, setTargetTheme] = React.useState(true);
 
   //Get global list saved on localstorage
   useEffect(() => {
@@ -27,11 +27,12 @@ export default function TodoWrapper() {
 
   // Make the functions when theme icon clicked
   function handleTheme() {
-      setTargetTheme(!targetTheme);
-      toogleTheme(targetTheme);
+    setTargetTheme(!targetTheme);
+    toogleTheme(targetTheme);
       localStorage.setItem("theme", targetTheme);
   }
 
+  //Get theme data and update on the page
   useEffect(() => {
     if (JSON.parse(localStorage.getItem('theme'))===true) {
         setTargetTheme(true);
