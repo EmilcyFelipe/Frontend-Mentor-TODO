@@ -37,11 +37,10 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Todo Felipe de Paula](https://todo-felipe-de-paula.netlify.app/)
 
 ## My process
-
+Initialy i created the basic estruture surrounding the global list that will be the reference to all project. I divide the components and worked in each one like a piece to piece. I through for some issues, like the matches between id objets and the global array but i can figure out and it worked XD
 ### Built with
 
 - Semantic HTML5 markup
