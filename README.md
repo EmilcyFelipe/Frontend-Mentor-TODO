@@ -15,7 +15,7 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 - [Author](#author)
 
 ## Overview
-    So, this is an amazing project that help me a lot to improve my skills of ReactJS. It is about a ToDo list that the user can see the tasks that remains to do, besides can filter the elements and remove the ones that already completed, and changed theme. All the data is saved and when the page has updated, you don't lose the ones. 
+So, this is an amazing project that help me a lot to improve my skills of ReactJS. It is about a ToDo list that the user can see the tasks that remains to do, besides can filter the elements and remove the ones that already completed, and changed theme. All the data is saved and when the page has updated, you don't lose the ones. 
 
 ### The challenge
 
@@ -32,15 +32,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![dark](https://github.com/EmilcyFelipe/Frontend-Mentor-TODO/blob/master/dark.png)
+![light](https://github.com/EmilcyFelipe/Frontend-Mentor-TODO/blob/master/light.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Todo Felipe de Paula](https://todo-felipe-de-paula.netlify.app/)
 
 ## My process
-
+Initialy i created the basic estruture surrounding the global list that will be the reference to all project. I divide the components and worked in each one like a piece to piece. I through for some issues, like the matches between id objets and the global array but i can figure out and it worked XD
 ### Built with
 
 - Semantic HTML5 markup
