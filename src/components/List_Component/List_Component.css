@@ -37,3 +37,11 @@
     border-radius: 5px;
     background-color: var(--screen-background);
 }
+
+.filter{
+    cursor: pointer;
+}
+
+.filter:active{
+    color:var(--primary-color);
+}

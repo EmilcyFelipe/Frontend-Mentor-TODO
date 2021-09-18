@@ -53,9 +53,9 @@ export default function ListComponent({list,func}) {
         <div className="management-wrapper">
           <p>{listTask.filter((lt)=>lt.complete===false).length} item{listTask.filter((lt)=>lt.complete===false).length>1 && "s"} left</p>
           <div className="filters-wrapper">
-            <div onClick={filterAction}>All</div>
-            <div  onClick={filterAction}>Active</div>
-            <div  onClick={filterAction}>Complete</div>
+            <div className="filter" onClick={filterAction}>All</div>
+            <div className="filter" onClick={filterAction}>Active</div>
+            <div className="filter" onClick={filterAction}>Complete</div>
           </div>
           <div onClick={clearComplete}>Clear Complete</div>
         </div>
