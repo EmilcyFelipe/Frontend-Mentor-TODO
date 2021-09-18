@@ -51,7 +51,7 @@ Initialy i created the basic estruture surrounding the global list that will be 
 
 ### What I learned
 
-I could improve a lot of localstorage concepts, and about ReactJs i through several problems, each ones i could learn more and more. Change themes, ReactJS concepts solidified
+I could improve a lot of localstorage concepts, its limitation and resources to overcome it, and about ReactJs i through several problems, each ones i could learn more and more. Change themes, ReactJS concepts solidified
 
 ### Continued development
 
